@@ -19,17 +19,17 @@ text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
-    text-align: center; 
+    text-align: center;
       
 }
 .nav-nav{
     margin-top: 70px;
     background-size: 190px;
     background-color: transparent;    
-    width: 20%;
+    width: 15%;
     height: 700px;
     padding-top: 10px;
-    text-decoration-color: green;
+    text-decoration-color: rgb(221, 236, 221);
     /* display: flex; */
     
 }
@@ -54,8 +54,9 @@ ul li {
 }
 .typing{
     color: rgb(219, 231, 224);
-    padding-left: 20px;
+    padding-left: 350px;
     padding-top: 190px;
+    text-align: center;
 }
 .card-img-top{
     height: 250px;
@@ -80,4 +81,103 @@ ul li {
     padding-right: 120px;
     width: 250px;
     background-color: transparent;
+}
+.carousel{
+    width: 50%;
+
+}
+.About-content{
+    margin-top: 20%;
+    margin-left:0;
+    margin-right:200px;
+}
+
+
+.navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color:transparent;
+    transition: all 0.3s linear;
+    border-style: solid;
+  }
+
+section {
+    min-height: 100vh;
+    margin-left: 300px;
+  }
+
+.nav-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .navigation {
+      left: -100%;
+    }
+    .navigation.active {
+      left: 0;
+    }
+    .nav-button {
+      display: block;
+    }
+    section {
+      margin-left: 0;
+    }
+  }
+  .flip-container{
+      margin-left: 320px;
+      background-image: fixed;
+  background-attachment: no-repeat;
+    }
+    .contact-form{
+        margin-left: 800px;
+    }
+.form-group{
+    width: 700px;
+}
+/* .img-thumbnail{
+    background-color: transparent;
+    margin-left: 100px;
+    margin-top: 250px;
+    border-style: solid;
+    box-sizing: content-box;
+} */
+.p-info{
+    margin-top: 220px;
+}
+.subtitle{
+    text-align: center;
+}
+.figure{
+    margin-left: 300px;
+    border-style: solid;
+    margin-top: 200px;
+    display: flex;
+    
+}
+.list-unstyled{
+  align-items: flex-end;
+
+}
+.subtitle{
+    height: 50px;
+    margin-right: 30px;
+}
+.content{
+    display: flex;
+    display: inherit;
+    margin-bottom: 40px;
+}
+#about{
+    text-align: center;
+
+}
+.p{
+    text-align: center;
 }

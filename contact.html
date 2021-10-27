@@ -9,6 +9,13 @@
     <!--Custom style css-->
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    function toggleMenu() {
+          document
+            .getElementsByClassName("navigation")[0]
+            .classList.toggle("active");
+        }
+  </script>
 <body>
     
     <head class="Header">
@@ -19,7 +26,7 @@
                 </div>
                </div> 
                <nav class="nav navbar-style">
-                <!-- <img src="" alt="xola" class="img.icon"> -->
+              <nav class="navigation">
                 <ul class="nav-nav flex-column">
 
                     <div class="card" style="width:18rem;">
@@ -58,9 +65,75 @@
                           </svg> Testimonials</a>
                      </li>
                   </ul>
-
-            
+                </nav>
+                <div class="contact-form">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="well well-sm">
+                              <form class="form-horizontal" method="post">
+                                  <fieldset>
+                                      <div class="text-center header">Contact us</div><br><br>
+              
+                                      <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                          <div class="col-md-8">
+                                              <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                          </div><br>
+                                      </div>
+                                      <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                          <div class="col-md-8">
+                                              <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                          </div><br>
+                                      </div>
+              
+                                      <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                          <div class="col-md-8">
+                                              <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                          </div><br>
+                                      </div>
+              
+                                      <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                          <div class="col-md-8">
+                                              <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                          </div><br>
+                                      </div>
+              
+                                      <div class="form-group">
+                                          <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                          <div class="col-md-8">
+                                              <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                          </div>
+                                      </div>
+              
+                                      <div class="form-group">
+                                          <div class="col-md-12 text-center">
+                                              <button type="submit" class="btn btn-lg">Submit</button>
+                                          </div>
+                                      </div>
+                                  </fieldset>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <style>
+                  .header {
+                      color: #00a738;
+                      font-size: 27px;
+                      padding: 10px;
+                  }
+              
+                  .bigicon {
+                      font-size: 35px;
+                      color: #36A0FF;
+                  }
+              </style>
         </nav>
+        <button class="nav-button" onclick="toggleMenu()">Menu</button>
 
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
 </body>

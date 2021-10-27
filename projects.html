@@ -9,6 +9,13 @@
     <!--Custom style css-->
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  function toggleMenu() {
+        document
+          .getElementsByClassName("navigation")[0]
+          .classList.toggle("active");
+      }
+</script>
 <body>
     
     <head class="Header">
@@ -19,7 +26,7 @@
                 </div>
                </div> 
                <nav class="nav navbar-style">
-                <!-- <img src="" alt="xola" class="img.icon"> -->
+                <nav class="navigation">
                 <ul class="nav-nav flex-column">
 
                     <div class="card" style="width:18rem;">
@@ -58,10 +65,10 @@
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                           </svg> Testimonials</a>
                      </li>
-                  </ul>
-
-            
+                  </ul> 
+                  </nav>  
         </nav>
+        <button class="nav-button" onclick="toggleMenu()">Menu</button>
 
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
 </body>

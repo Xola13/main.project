@@ -9,6 +9,13 @@
     <!--Custom style css-->
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  function toggleMenu() {
+        document
+          .getElementsByClassName("navigation")[0]
+          .classList.toggle("active");
+      }
+</script>
 <body>
     <head class="Header">
         <!-- <nav class="nav navbar-style"> -->
@@ -18,7 +25,7 @@
                 </div>
                </div> 
                <nav class="nav navbar-style">
-                <!-- <img src="" alt="xola" class="img.icon"> -->
+                <nav class="navigation">
                 <ul class="nav-nav flex-column">
 
                     <div class="card" style="width:18rem;">
@@ -57,8 +64,213 @@
                           </svg> Testimonials</a>
                      </li>
                   </ul>
-  
+                 </nav>
+            
+  <style>
+    ul {
+      color: black;
+    }
+
+    a:hover {
+      color: antiquewhite;
+    }
+
+    li {
+      display: inline;
+    }
+
+
+
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("ZEiRo6.jpg");
+      background-attachment: fixed;
+      padding-left: 0px;
+      margin-left: 0px;
+      text-align: center;
+      /* margin-top: 200px; */
+      padding-right: 300px;
+      margin-top: 0px;
+     margin-bottom: 0px;
+
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 400px;
+      height: 400px;
+      perspective: 1000px;
+      display: inline-block;
+
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 50%;
+    }
+
+    .flip-card-front {
+      background-color: transparent;
+      color: black;
+      border-radius: 50%
+    }
+
+    .flip-card-back {
+      background-color: #495f61;
+      color: rgb(188, 240, 233);
+      transform: rotateY(180deg);
+    }
+    a:hover{
+        color: rgb(15, 86, 114);
+    }
+    .grid-container { 
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    </style>
+    <div class="flip-container">
+      <h1 style="font-size: 100px; color:rgba(123, 231, 208, 0.37);">Testimonials</h1>
+      <!--flip cards-->
+      
+      
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="index.jpeg" alt="xola" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Xola Magatya</h1>
+              <p>Front-end Developer</p>
+              <p>Perseverance is what keeps me going</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      
+      <!--flip cards-->
+      
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="grid-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Bulela.jpeg" alt="Bulela" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Bulela Gomoshe</h1>
+              <p>Back-end Developer</p>
+              <p>The best hacker of all times</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+       
+        <!--flip card-->
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="grid-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="emmanuel.jpeg" alt="Emmanuel" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Emmanuel Fente</h1>
+              <p>Programmer</p>
+              <p>The best programmer of all times</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+        <!--flip card-->
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="grid-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="jude.jpeg" alt="jude" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Jude Julius</h1>
+              <p>Hacker</p>
+              <p>The best hacker of all times</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+        <!--flip card-->
+      
+        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="grid-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Kagiso.jpeg" alt="Kagiso" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Kagiso Mphayi</h1>
+              <p>Developer</p>
+              <p>The best Game Developer of all times</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+        <!--flip card-->
+      
+        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="grid-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Jamie-Lee.jpg" alt="Jamie" style="width:400px;height:400px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Jamie-Lee Kinnear</h1>
+              <p>Hacker</p>
+              <p>The best ethical hacker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
         </nav>
+        <button class="nav-button" onclick="toggleMenu()">Menu</button>
 
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"> 
 </body>

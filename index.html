@@ -9,11 +9,14 @@
 <!--Custom style css-->
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  function toggleMenu() {
+        document
+          .getElementsByClassName("navigation")[0]
+          .classList.toggle("active");
+      }
+</script>
 <body style="background:url(background1.jpg) no-repeat fixed center center; background-size: cover;">
-
-
-
-
 
     <head class="Header">
         <!-- <nav class="nav navbar-style"> -->
@@ -80,8 +83,8 @@
                 <div class="col-sm-12 col-6">
                     <img src="asserts/images/landing (1).png" alt="">
                 </div>
-
         </nav>
+        <button class="nav-button" onclick="toggleMenu()">Menu</button>
 
     </head>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">

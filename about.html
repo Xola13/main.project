@@ -9,6 +9,14 @@
     <!--Custom style css-->
 <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  function toggleMenu() {
+        document
+          .getElementsByClassName("navigation")[0]
+          .classList.toggle("active");
+      }
+</script>
 <body style="background:url(background2\(about\).jpg) no-repeat fixed center center; background-size: cover;">
 
     <head class="Header">
@@ -19,7 +27,7 @@
                 </div>
                </div> 
                <nav class="nav navbar-style">
-                <!-- <img src="" alt="xola" class="img.icon"> -->
+                <nav class="navigation">
                 <ul class="nav-nav flex-column">
 
                     <div class="card" style="width:18rem;">
@@ -58,11 +66,46 @@
                           </svg> Testimonials</a>
                      </li>
                   </ul>
-                  <h1 class="display-1">About</h1>
-            
-        </nav>
+                  </nav> 
+                   <div class="content">
+                       <figure class="figure">
+                        <img src="Xola1-removebg-preview-removebg-preview.png" class="figure-img img-fluid rounded" alt="...">
+                       
+                           <ul class="list-unstyled">
+                        <li style="font-size: 20px;">Full Name :   Xola Magatya</li><br>
+                        <li style="font-size: 20px;">Date of birth :   30-03-1999</li><br>
+                  <li style="font-size: 20px;">Gender :   Male</li><br>
+                        <li style="font-size: 20px;">Location :   Old Crossroads</li><br>
+                        <li style="font-size: 20px;">Cellphone number:   0672155531</li><br>
+                        <li style="font-size: 20px;">Email Address: xolamagatya86@gmail.com</li><br>
+                        <li style="font-size: 20px;">Github: https://github.com/Xola13</li><br>
+                        <li style="font-size: 20px;">Linkedin: </li>
+                      </figure>
+                      <div class="subtitle">
+                      <h2><u>Personal Details</u></h2><br>
+                      </div>
+                   
+                  </div>
+                 
+        </nav><br><br><br><br>
+<div class="about-content" style="color: ivory;">
+      <section id="about">
+      <h1>About Me</h1><br> 
+      <h4>I'm a self-starter who is always willing to learn new skills.<br> I like new challenges that requires me to think out of the box.
+      </h4>
+      <h4>I love working with electronics, that was what drew me to go & study electronic engineering initially.<br> As I was doing that, I wanted to learn how they work behind the scenes & I started to gain interest in coding.</h4>
+    </section>
+      
+</div>
+<div class="Experience">
+<section id="Education">
+  <h1>Skills</h1>
+  
+</section>
+</div>
+    
+        <button class="nav-button" onclick="toggleMenu()">Menu</button>
 
-       
 
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
 </body>
