@@ -32,25 +32,26 @@
 /*Icon styles*/
 .fa {
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
   width: 60px;
   text-align: center;
+  flex-direction: row;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
 }
 .fa-facebook {
-  background: #3b5998;
-  color: white;
+  background: #000000;
+  color: goldenrod;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+  background: #040505;
+  color: goldenrod;
 }
 .fa-github {
-  background: white;
-  color: #000000;
+  background: rgb(3, 3, 3);
+  color: goldenrod;
 }
 
 ul li {
@@ -75,12 +76,7 @@ ul li {
   padding-top: 190px;
   text-align: center;
 }
-.card-img-top {
-  height: 250px;
-  padding-right: 120px;
-  width: 250px;
-  background-color: transparent;
-}
+
 .nav-link {
   color: goldenrod;
   list-style: none;
