@@ -14,6 +14,11 @@
   display: flex;
   text-align: center;
 }
+.about{
+ display: flex;
+ position:absolute; left: 600px; top: 200px;
+ 
+}
 .nav-nav {
   margin-top: 70px;
   background-size: 190px;
@@ -87,11 +92,7 @@ ul li {
   /* /* border-bottom: 2px solid snow; */
   color: springgreen;
 }
-/* .card-img-top2 {
-  background-color: transparent;
-  height: 100px;
-  /* padding-right: 120px; */
-/* width: fit-content; */
+
 
 .carousel {
   width: 70%;
@@ -142,25 +143,18 @@ section {
   background-position: center;
   position: fixed;
 }
- /* .contact-form {
-  margin-left: 800px;
-  width: 300px;
-  margin-top: 30px;
-}   */
+
 .conta{
   margin-top: 70px;
+  display: flex;
+justify-content: center;
+align-items: center;
+transform: translate(172px, 0px);
 }
 .form-group {
   width: 400px;
 }
-/* .card-group{} */
-/* .img-thumbnail{
-    background-color: transparent;
-    margin-left: 100px;
-    margin-top: 250px;
-    border-style: solid;
-    box-sizing: content-box;
-} */
+
 .p-info {
   margin-top: 220px;
 }
@@ -189,10 +183,7 @@ section {
   margin-bottom: 40px;
   width: 9000px;
 }
-#about {
-  text-align: center;
-  margin-bottom: 0;
-}
+
 .p {
   text-align: center;
 }
@@ -213,11 +204,7 @@ section {
   color: gold;
   padding-left: 40px;
 }
-.about{
 
-  display: flex;
-
-}
 .projects {
   width: 6000px;
   margin-left: 700px;
