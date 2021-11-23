@@ -60,14 +60,14 @@ ul li {
 .card-body {
   border-radius: 0;
   margin-top: 0;
-  height: 2px;
-  width: 5px;
+  height: 200px;
+  width: 500px;
   padding-left: 0;
 }
 .card {
   border: none;
   background-color: transparent;
-  width: 10px;
+  
 }
 .typing {
   color: rgb(219, 231, 224);
@@ -106,12 +106,12 @@ ul li {
   width: 250px
 }
 
-.About-content {
+/* .About-content {
   margin-top: 20%;
   margin-left: 0;
   margin-right: 200px;
   margin-bottom: 0;
-}
+} */
 
 .navigation {
   position: fixed;
