@@ -745,7 +745,15 @@ li:hover .description {
       padding-left: 0cm;
       left: 0px; 
     }
+.col-md-4{
+  margin-left: 0px;
+  padding-left: 0px;
+}
 .row.g-3{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.col-md-8{
   margin-left: 0px;
   padding-left: 0px;
 }
