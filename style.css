@@ -53,6 +53,10 @@
   color: rgb(248, 248, 248);
 }
 
+.Xola{
+  width: 300px;
+}
+
 ul li {
   list-style: none;
   color: goldenrod;
@@ -61,16 +65,22 @@ ul li {
   border-radius: 0;
   margin-top: 0;
   height: 200px;
-  width: 700px;
-  padding-left: 0;
+  width: 800px;
+  padding-left: 180px;
 }
 .card {
-  border: none;
-  width: 150px;
+  border: 1px black;
+  width: 250px;
   height: 200px;
   background-color: transparent;
   
 }
+
+.skill{
+  width: 150px;
+  height: 200px;
+}
+
 .typing {
   color: rgb(219, 231, 224);
   padding-left: 350px;
@@ -518,95 +528,52 @@ li:hover .description {
 }
 
 /*Landing animation*/
-
-.hero-students {
-  justify-content: center;
-  margin-left: 600px;
-  width: 500px;
-  margin-top: 200px;
-  background-color: #dcdfe8;
-  display: flex;
-  flex-basis: content;
-  flex-direction: column;
-  padding: 2em;
-}
-
-.hero-students > div {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  max-width: 640px;
+.text-effect{
+  color: #333;
+  font-family: 'Mali', cursive;
+  font-size: 100px;
+  font-weight: 700;
+  padding-left: 17cm;
+  padding-top: 5cm;
   text-align: center;
 }
-
-a {
-  color: #000;
-}
-
-h1 {
+.text-effect span{
   display: inline-block;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 4em;
-  letter-spacing: -0.05em;
-  line-height: 0.75;
-  margin: 0.5em 0;
-  text-align: center;
-  text-transform: uppercase;
-  transform: rotate(-7deg);
+  animation: flicker 1s linear forwards infinite;
 }
-
-h1 > span {
-  background-color: transparent;
-  box-sizing: border-box;
-  color: transparent;
-  display: inline-block;
-  margin: -0.1em auto;
-  width: auto;
-}
-
-h1 > span:before {
-  animation-name: title;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  box-sizing: border-box;
-  content: attr(data-text);
-  display: inline;
-  color: white;
-  display: block;
-  position: absolute;
-  z-index: 1;
-}
-
-h1 > span:last-child:before {
-  animation-delay: 0.25s;
-}
-
-@keyframes title {
-  0% {
-    opacity: 0;
-    transform: translateY(-0.2em);
-    -webkit-clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+.text-effect span:nth-child(2){ animation-delay: 0.2s; }
+.text-effect span:nth-child(3){ animation-delay: 0.5s; }
+.text-effect span:nth-child(4){ animation-delay: 0.6s; }
+.text-effect span:nth-child(5){ animation-delay: 0.8s; }
+.text-effect span:nth-child(6){ animation-delay: 1.2s; }
+.text-effect span:nth-child(7){ animation-delay: 1.5s; }
+.text-effect span:nth-child(8){ animation-delay: 1.6s; }
+.text-effect span:nth-child(9){ animation-delay: 1.8s; }
+.text-effect span:nth-child(10){ animation-delay: 2s; }
+@keyframes flicker{
+  0%{ color: #333; }
+  5%, 15%, 25%, 30%, 100%{
+      color: #fff;
+      text-shadow: 0px 0px 25px cyan;
   }
-
-  20% {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  10%, 20%{
+      color: #333;
+      text-shadow: none;
   }
-
-  80% {
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(0.1em);
-    -webkit-clip-path: polygon(0 70%, 100% 0, 100% 30%, 0 100%);
-    clip-path: polygon(0 70%, 100% 0, 100% 30%, 0 100%);
+}
+@media only screen and (max-width: 990px){
+  .text-effect{ font-size: 90px; }
+}
+@media only screen and (max-width: 767px){
+  .text-effect{ font-size: 70px; }
+}
+@media only screen and (max-width: 576px){
+  .text-effect{ font-size: 50px; }
+}
+@media only screen and (max-width: 479px){
+  .text-effect{
+      font-size: 40px;
+      line-height: 50px;
   }
 }
 
@@ -679,6 +646,20 @@ h1 > span:last-child:before {
   .list-unstyled {
     display: grid;
   }
+
+@media screen and (max-width: 779px){
+  .about{
+     margin-right: 200px;
+  }
+  .card-body{
+    padding-right: 90px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .main-timeline .timeline{ width: 100%; }
+}
+
 @media screen and (max-width: 670px){
   .carousel{
     width: 70%;
@@ -689,10 +670,12 @@ h1 > span:last-child:before {
   }
 }
 
-
-@media screen and (max-width:767px){
-  .main-timeline .timeline{ width: 100%; }
+@media screen and (max-width: 611px) {
+  .conta{
+    margin-left: 20px;
+  }
 }
+
 
   @media (max-width: 575.99px) {
     .section-contact {
