@@ -117,13 +117,15 @@ ul li {
   width: 250px;
 }
 
-/* .About-content {
-  margin-top: 20%;
-  margin-left: 0;
-  margin-right: 200px;
-  margin-bottom: 0;
-} */
+.nono{
+  margin-left: 500px;
+}
+.land{
+  margin-left: 600px;
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
 
+}
 .navigation {
   position: fixed;
   left: 0;
@@ -604,6 +606,7 @@ li:hover .description {
   }
 }
 
+
 /*Landing animation ends*/
 
 @media screen and (max-width: 1000px) {
@@ -671,6 +674,10 @@ li:hover .description {
   .list-unstyled {
     display: grid;
   }
+  .nono{
+    margin-left: 0px;
+    left: 0px;
+  }
 
   @media screen and (max-width: 779px) {
     .about {
@@ -689,7 +696,10 @@ li:hover .description {
       margin-left: 0cm;
       padding-left: 0cm;
       left: 0px;
-      
+    }
+    .nono{
+      margin-left: 0px;
+      left: 0px;
     }
   }
 
@@ -724,25 +734,32 @@ li:hover .description {
       height: 200px;
       width: 900px;
       padding-left: 0px;
+      margin-left: 0px;
     }
     .info {
-      margin-top: 520px;
+      margin-top: 720px;
       margin-left: 0px;
     }
     .text-effect{
       margin-left: 0cm;
       padding-left: 0cm;
-      left: 0px;
-      
+      left: 0px; 
     }
-    .h4{
+.row.g-3{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.nono{
+  margin-left: 0px;
+}
+    .land{
       margin-left: 0cm;
       padding-left: 0cm;
       left: 0px;
-      
     }
     .card {
       margin-left: 0px;
+      padding-left: 0px;
     }
   }
 }
@@ -767,7 +784,15 @@ li:hover .description {
     margin-left: 0cm;
     padding-left: 0cm;
     left: 0px;
-    
+  }
+  .land{
+    margin-left: 0cm;
+    padding-left: 0cm;
+    left: 0px;
+  }
+  .nono{
+    margin-left: 0px;
+    left: 0px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -780,6 +805,14 @@ li:hover .description {
     margin-left: 0cm;
     padding-left: 0cm;
     left: 0px;
-    
+  }
+  .nono{
+    margin-left: 0px;
+    left: 0px;
+  }
+  .land{
+    margin-left: 0cm;
+    padding-left: 0cm;
+    left: 0px;
   }
 }
